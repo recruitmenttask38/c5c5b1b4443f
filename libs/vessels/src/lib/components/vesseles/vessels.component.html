@@ -1,0 +1,7 @@
+<ag-grid-angular
+  class="Vessels ag-theme-alpine-dark"
+  *ngIf="vessels$ | async as rowData"
+  [columnDefs]="VEESEL_TABEL_COLUMNS"
+  [rowData]="rowData"
+  (gridReady)="onGridReady($event)">
+</ag-grid-angular>
